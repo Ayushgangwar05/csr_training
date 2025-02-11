@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table formate</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+
+    }
+
+    .table2,
+    .table2 th,
+    .table2 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .table3,
+    .table3 th,
+    .table3 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .table4,
+    .table4 th,
+    .table4 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .table4 th,
+    .table4 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .table9,
+    .table9 th,
+    .table9 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+
+    }
+
+    .table10 tr:nth-child(even) {
+        background-color: aqua;
+    }
+
+    .table11 td:nth-child(even) {
+        background-color: aqua;
+    }
+
+    .table12 td:nth-child(odd) {
+        background-color: rgb(22, 21, 21);
+        color: white;
+    }
+
+    .table13 th:nth-child(even),
+    .table13 td:nth-child(even),
+    .table13 tr:nth-child(even) {
+        background-color: rgba(150, 120, 100, 0.3);
+    }
+</style>
+
+<body>
+    <div>
+
+        <h1 style="background-color: blue; width: 260px;">this is a heading</h1>
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">this is a heading
+        </h1>
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">this is a heading
+        </h1>
+        <h2 style="text-align: center;">This is a center heading</h2>
+
+
+        <p><b>Lorem</b> <strong>ipsum dolor sit</strong> <i>amet consectetur</i> <em>adipisicing</em><mark>elit</mark> .
+            <small>Corrupti</small>
+            <del>odit quis</del>
+            <ins>maiores</ins>
+            <sub>libero</sub>
+            <sup>dolores vel</sup>
+
+            et consequatur quo ipsam veniam iusto nihil veritatis similique ratione eveniet fuga ab, expedita labore.
+        </p>
+    </div>
+
+    <!-- tables formate -->
+    <div>
+        <table>
+            <tr>
+                <th>sno.</th>
+                <th>name</th>
+                <th>date</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ayush</td>
+                <td>1/05/2000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ayush1</td>
+                <td>1/07/2001</td>
+            </tr>
+        </table>
+
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <div>
+        <table class="table2">
+            <tr>
+                <th>sno.</th>
+                <th>name</th>
+                <th>area</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>ayush</td>
+                <td>fullstack</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>ayush1</td>
+                <td>React</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Html have different type of space in table -->
+    <br />
+    <br />
+    <div>
+
+        <table class="table3">
+            <tr>
+                <th colspan="2">sno.</th>
+                <th>name</th>
+
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>ayush</td>
+                <td>fullstack</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>ayush1</td>
+                <td>React</td>
+            </tr>
+        </table>
+
+
+    </div>
+    <br />
+    <br />
+    <div>
+
+        <table class="table4">
+            <caption>Tables is about date/time</caption>
+            <tr>
+                <th></th>
+                <th>sno.</th>
+                <th>name</th>
+                <th>area</th>
+            </tr>
+            <tr>
+                <th>8:00</th>
+                <td>1.</td>
+                <td>ayush</td>
+                <td>fullstack</td>
+            </tr>
+            <tr>
+                <th>9:00</th>
+                <td>2.</td>
+                <td>ayush1</td>
+                <td>React</td>
+            </tr>
+        </table>
+
+
+
+
+        <table class="table4">
+            <caption>Tables is about date/time</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th>sno.</th>
+                <th>name</th>
+                <th>area</th>
+            </tr>
+            <tr>
+                <th>8:00</th>
+                <td>1.</td>
+                <td>ayush</td>
+                <td>fullstack</td>
+            </tr>
+            <tr>
+                <th>9:00</th>
+                <td>2.</td>
+                <td>ayush1</td>
+                <td>React</td>
+            </tr>
+        </table>
+
+
+
+        <table class="table4">
+            <caption>Tables is about date/time</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th>sno.</th>
+                <th>name</th>
+                <th>area</th>
+            </tr>
+            <tr>
+                <th colspan="2">8:00</th>
+                <td>1.</td>
+
+            </tr>
+            <tr>
+                <th>9:00</th>
+                <td>2.</td>
+                <td>ayush1</td>
+                <td>React</td>
+            </tr>
+        </table>
+        <br />
+        <table class="table9">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <td>till</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>927262622</td>
+
+            </tr>
+            <tr>
+                <td>927262622</td>
+            </tr>
+        </table>
+
+
+
+        <table class="table10">
+            <tr>
+                <th>sno.</th>
+                <th>ID</th>
+                <th>ID1</th>
+                <th>ID2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+        </table>
+        <table class="table11">
+            <tr>
+                <th>sno.</th>
+                <th>ID</th>
+                <th>ID1</th>
+                <th>ID2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+        </table>
+        <table class="table12">
+            <tr>
+                <th>sno.</th>
+                <th>ID</th>
+                <th>ID1</th>
+                <th>ID2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+        </table>
+        <table class="table13">
+            <tr>
+                <th>sno.</th>
+                <th>ID</th>
+                <th>ID1</th>
+                <th>ID2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+        </table>
+        <table class="table14">
+            <colgroup>
+                <col span="3" style="background-color: blueviolet;">
+            </colgroup>
+            <tr>
+                <th>sno.</th>
+                <th>ID</th>
+                <th>ID1</th>
+                <th>ID2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
