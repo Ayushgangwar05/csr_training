@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #imagechnage {
+        border: 2px solid red;
+    }
+</style>
+
+<body>
+
+
+
+
+
+    <iframe src="/Basic.html" name="basic12" width="500" height="300"></iframe>
+
+
+    <br />
+    <br />
+    <a href="/Basic1.html" target="basic12">Another_links to chnage in iframe</a>
+
+    <pre>uyywywwb jsjsjsjsj jshshs uyye </pre>
+    <p id="namechnage2"> this is good</p>
+
+
+    <button id="clickme">click me</button>
+    <p id="name12">hello this is me</p>
+
+
+
+
+    <!-- when we push a image in dynamically -->
+
+    <img id="imagechnage" src="">
+
+
+    <script>
+        document.getElementById("imagechnage").src = "https://t3.ftcdn.net/jpg/08/07/28/18/360_F_807281855_tf1GkaRzrFBnfFILz0q2GfU9cV5UiC8A.jpg"
+    </script>
+
+
+
+    <script>
+        document.getElementById("namechnage2").innerHTML = "Ayush is here";
+    </script>
+
+
+    <script>
+
+        let media = document.getElementById("clickme")
+        media.addEventListener("click", () => {
+            console.log("click me")
+            let data = document.getElementById("name12")
+            data.innerHTML = "Welcome Here"
+
+        })
+    </script>
+
+
+</body>
+
+</html>
