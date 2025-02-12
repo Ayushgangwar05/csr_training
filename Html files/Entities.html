@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+
+
+
+        <p>&lt;</p>
+
+        <p>&gt;</p>
+        <p> a&nbsp;b</p>
+        <p>&yen;</p>
+        <p>&race;</p>
+        <p>&reg;</p>
+        <p>&reg;</p>
+
+
+        <p>&copy;</p>
+
+        <p>&hearts;</p>
+    </div>
+
+    <div>
+
+
+        <button id="image123">
+            click when the image
+        </button>
+
+
+        <img id="imageurlimg" src="/Image1.jpg" width="400" height="400">
+
+
+        <script>
+            let btn1 = document.getElementById("image123");
+            let currentindex = 0;
+
+            const urls = [
+                { src: "./Image2.jpg" },
+                { src: "./Image1.jpg" },
+                { src: "./Image4.jpg" }
+            ];
+            btn1.addEventListener("click", () => {
+                console.log("Button successful");
+                currentindex = (currentindex + 1) % urls.length;
+                document.getElementById("imageurlimg").src = urls[currentindex].src
+            });
+        </script>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
