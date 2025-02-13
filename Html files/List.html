@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .maindiv {
+        overflow: auto;
+
+
+    }
+
+    .maindiv div {
+        float: left;
+
+    }
+</style>
+
+<body>
+    <div id="recalllid"
+        style="width: 750px; margin: auto;background-color: aqua; height: 150px; text-align: center; padding: 20px 20px">
+        <dl>
+            <dt>Bar</dt>
+            <dd>In bar we can drink</dd>
+            <dt>Tea</dt>
+            <dd>
+                We cn drink a tea
+            </dd>
+        </dl>
+    </div>
+
+
+    <div class="maindiv" style="height: 1000px;">
+        <div style="background-color: aqua; border: 1px solid black;">
+            <h1>hello</h1>
+            <p>hello welcome to...</p>
+        </div>
+        <div style="background-color: blue; border: 1px solid black;">
+            <h1>hello1</h1>
+            <p>hello welcome1 to...</p>
+        </div>
+        <div style="background-color: blueviolet; border: 1px solid black;">
+            <h1>hello2</h1>
+            <p>hello welcome2 to...</p>
+        </div>
+    </div>
+
+    <a href="#recalllid">clickme</a>
+
+
+    <p id="namechange">hello this is ayush</p>
+    <script>
+        let name1 = document.getElementById("namechange")
+        name1.innerHTML = "welcome this is ayush"
+    </script>
+
+
+    <iframe src="/Clickbuttonimagechange.html" width="500" height="300" style="border: 1px solid rgb(236, 144, 144);"
+        title="this is a iframe" name="webpageimage"></iframe>
+
+    <a href="" target="webpageimage">click me webpage</a>
+
+    <noscript>this page is not render</noscript>
+
+    <p>
+        this is a computer special charater we can write <kbd>ctrl + s</kbd>
+    </p>
+    <p><samp>File is not found</samp></p>
+    <code>
+x=5;
+y=7;
+z=x+y;
+</code>
+
+    <code>
+    <pre>
+        x=5;
+        y=7;
+        z=x+y;
+    </pre>
+</code>
+    <p>
+        this is a area of triangle: 1/2 x <var>b</var> x <var>h</var>
+    </p>
+    <p>
+        &lt;
+        &gt;
+        &nbsp;
+        &nacute;
+    </p>
+
+
+
+</body>
+
+</html>
