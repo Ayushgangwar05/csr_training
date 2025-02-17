@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+
+<body>
+    <input type="color" />
+    <br />
+    <input type="checkbox" />
+    <br />
+    <input type="date" />
+    <br />
+    <input type="datetime-local" />
+    <br />
+    <input type="email" />
+    <br />
+    <input type="file" />
+    <br />
+    <input type="hidden" />
+    <br />
+    <input type="image" />
+    <br />
+    <input type="month" />
+    <br />
+    <input type="number" />
+    <br />
+    <input type="radio" />
+    <br />
+
+    <input type="range" />
+
+    <br />
+    <input type="search" />
+    <br />
+    <input type="button" />
+    <br />
+    <input type="url" />
+    <br />
+    <input type="week" />
+
+    <div>
+        <p>form type text</p>
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" value="First name" />
+            <label for="Lname">Last name</label>
+            <input type="text" value="Last name" />
+
+
+        </form>
+    </div>
+    <div>
+        <p>
+            form type password
+        </p>
+        <form>
+            <label for="password">Password :</label>
+            <input type="password">
+        </form>
+    </div>
+    <div>
+        <p>form type submit</p>
+        <form>
+            <label for="name">Name :</label>
+            <input type="text" value="Name" required>
+            <input type="submit">
+        </form>
+    </div>
+    <div>
+        <p>reset button</p>
+        <form>
+            <label for="reset">Reset</label>
+            <input type="reset" value="reset" />
+        </form>
+    </div>
+
+    <div>
+        <p>radio button</p>
+        <form>
+            <input type="radio" value="html" name="fname" />
+            <label for="html">html</label>
+            <input type="radio" value="css" name="fname" />
+            <label for="css">css</label>
+            <input type="radio" value="js" name="fname" />
+            <label for="js">js</label>
+
+
+        </form>
+    </div>
+
+    <div>
+        <p>
+            checkbox in form
+
+        </p>
+        <form>
+            <input type="checkbox" value="html" name="fname" />
+            <label for="select">html</label>
+            <input type="checkbox" value="css" name="fname1" checked />
+            <label for="select">css</label>
+            <input type="checkbox" value="js" name="fname2" />
+            <label for="select">js</label>
+        </form>
+    </div>
+    <div>
+        <p>
+            date in form tag
+        </p>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" value="date" name="datetype" min="2000-01-02" max="2022-12-12" />
+        </form>
+    </div>
+    <div>
+        <p>
+
+        </p>
+    </div>
+    <div>
+        <p>
+            image type in form
+        </p>
+        <form>
+            <label for="image">Image:</label>
+            <input type="image" alt="image" src="/Image1.jpg" width="30" height="30" value="imagetype">
+        </form>
+    </div>
+    <div>
+        <p>
+            file form
+        </p>
+        <form>
+            <label for="file">File:</label>
+            <input type="file" name="enter a file" value="ffile" />
+        </form>
+    </div>
+
+    <div>
+        <p>
+            hidden file in form
+        </p>
+        <form>
+            <label for="fname">Fname:</label>
+            <input type="text" value="fname" readonly />
+            <label for="lname">Lname:</label>
+            <input type="text" value="Lname" />
+            <input type="hidden" name="hidden" value="hidden1">
+        </form>
+    </div>
+    <div>
+        <p>
+            number tag in form
+        </p>
+        <form>
+            <label for="number">Number:</label>
+            <input type="number" value="number" name="number" min="1" max="10" size="1" step="3" />
+        </form>
+    </div>
+
+    <div>
+        <p>
+            range in form
+        </p>
+        <form>
+            <label for="range">Range :</label>
+            <input type="range" max="50" min="2" name="rangetype">
+        </form>
+    </div>
+    <div>
+        <p>
+            pattern in tel
+        </p>
+        <form>
+            <label for="number">Number</label>
+            <input type="number" value="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+            <input type="submit" />
+        </form>
+    </div>
+    <div>
+        <p>
+            multiple file
+        </p>
+        <form>
+            <label for="file">File</label>
+            <input type="file" name="file" multiple />
+        </form>
+    </div>
+    <div>
+        <p> placeholder in form</p>
+        <form>
+            <label for="fname">Fname</label>
+            <input type="text" placeholder="firstname" />
+        </form>
+    </div>
+    <div>
+        <p>auto_focus in form</p>
+        <form>
+            <label for="firstname">firstname:</label>
+            <input type="text" autofocus name="text" value="fname" autocomplete="ayushgangwar" />
+        </form>
+    </div>
+
+    <div>
+        <p>
+            datalist in form
+        </p>
+        <form>
+            <input list="browser" />
+            <datalist id="browser">
+                <option value="edge">
+                <option value="chrome">
+                <option value="safari">
+                <option value="uc">
+        </form>
+    </div>
+    <div>
+        <p>
+            auto complete
+        </p>
+        <form autocomplete="on" method="post" action="/Basic.html">
+            <input type="text" value="fname">
+            <input type="text" value="Lname">
+            <input type="submit" formaction="/Clickbuttonimagechange.html" formenctype="">
+        </form>
+    </div>
+
+
+    <div>
+        <p>
+            Formtarget
+        </p>
+        <form action="">
+            <label for="fname">Fname</label>
+            <input type="text">
+            <input type="submit" formtarget="_blank" value="submit">
+
+
+        </form>
+
+    </div>
+    <div>
+        <p>
+            onvalidation
+        </p>
+        <form action="" method="post" novalidate>
+            <label for="email">
+                email
+            </label>
+            <input type="email" value="email">
+
+            <input type="submit" />
+        </form>
+    </div>
+
+</body>
+
+</html>

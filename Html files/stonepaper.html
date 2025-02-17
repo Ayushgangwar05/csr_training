@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        stone paper scissor game play
+    </p>
+    <button onclick="function2('stone')">
+        stone
+    </button>
+    <button onclick="function2('paper')">
+        paper
+    </button>
+    <button onclick="function2('scissor')">
+        scissor
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function function2(userchooice) {
+            let user = ["stone", "paper", "scissor"]
+            let computerchoice = user[Math.floor(Math.random() * 3)]
+            console.log("Computer choice is :" + computerchoice)
+            console.log("Your choice is :" + userchooice)
+            if (userchooice == computerchoice) {
+                console.log("tin game")
+            }
+            else if ((userchooice == "stone" && computerchoice == "scissor") || (userchooice == "paper" && computerchoice == "stone") || (userchooice == "scissor" && computerchoice == "paper")) {
+                console.log("You win")
+            }
+            else {
+                console.log("You lose")
+            }
+        }
+    </script>
+</body>
+
+</html>
