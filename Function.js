@@ -106,3 +106,101 @@
 // let new7 = 10;
 // console.log(new7.toString());
 // console.log(typeof(new7))
+
+// const arr = ["Ayush", "Gangwar", 30];
+// const arr1 = ["Ayush", "Gangwar", 30];
+// const arr2 = ["Ayush", "Gangwar", 30];
+// const vrr = [];
+// vrr.push(arr);
+// vrr.push(arr1);
+// vrr.push(arr2);
+// console.log(vrr);
+
+// const numbers = [4, 9, 16, 25, 29];
+// let first = numbers.findIndex(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+
+// }
+
+// console.log(numbers.sort());
+// console.log(numbers.toSorted());
+
+// const d = new Date("2025, 2,10");
+// console.log(d);
+
+// const d = new Date("October 13, 2014 11:13:00");
+// console.log(d);
+
+// const d = new Date("2015-03");
+// console.log(d)
+// const d = new Date("2015/03/25");
+
+// console.log(d);
+
+// const d = new Date("January 01, 2025");
+// // console.log(date.getFullYear())
+
+// console.log(d.setFullYear(2020));
+
+// const d = new Date("January 01, 2025");
+// d.setFullYear(2020);
+// console.log(d);
+
+// const d = new Date("march, 01,2024");
+// d.setFullYear(2025);
+// d.setMonth(4);
+// console.log(d);
+
+// console.log(Math.floor(3.6000000000));
+// console.log(Math.trunc(9.8));
+// console.log(Math.sign(-5));
+
+// const ff = [2, 3, 4, , 5, 9, 11, 20];
+// console.log(Math.max.apply(null, ff));
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// let fr = fruits.includes("Banana");
+// console.log(fr);
+
+// const arr3 = [3, 4, 5, 6, 7, 11, 2];
+// const arrrt = arr3.sort();
+// console.log(arrrt);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// const fr = fruits.reverse();
+// console.log(fr);
+
+// let arr = [10, 40, 55, 203, 2000, 400];
+// arr.forEach((e) => {
+//   console.log(e);
+// });
+
+// const numbers1 = [45, 4, 9, 16, 25];
+
+// numbers1.map((e) => {
+//   console.log(e / 2);
+// });
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// numbers.filter((e) => {
+//   console.log(e / 4);
+// });
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const f = fruits.entries();
+
+// for (let x of f) {
+//   console.log(x);
+// }
+
+// const months = ["Januar", "feb", "Mar", "April"];
+
+// let mnn = months.with(2, "March");
+// console.group(mnn);
+
+// const re = "abcd";
+// let s = re.replace("b", "");
+// console.log(s);
